@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="es">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristianismo Histórico - Análisis Profundo</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+        body {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 50%, #ff9a9e 100%);
+            color: #2d3748;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
+            border-radius: 30px;
+            box-shadow: 0 15px 40px rgba(255, 182, 193, 0.4);
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            border: 3px solid rgba(255, 192, 203, 0.3);
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0 0 20px 0;
+            background: linear-gradient(135deg, #ff6b9d 0%, #c06c84 50%, #f67280 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            letter-spacing: -1px;
+            text-shadow: 2px 2px 4px rgba(255, 182, 193, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.4em;
+            color: #c06c84;
+            font-style: italic;
+            margin: 0;
+        }
+
+        .branches {
+            display: flex;
+            gap: 20px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .branch-card {
+            flex: 1;
+            min-width: 280px;
+            background: linear-gradient(135deg, #fff 0%, #fff5f7 100%);
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid rgba(255, 192, 203, 0.2);
+        }
+
+        .branch-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(255, 182, 193, 0.5);
+            border-color: rgba(255, 192, 203, 0.5);
+        }
+
+        .image-hero {
+            margin: 40px 0;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(255, 182, 193, 0.4);
+            border: 3px solid rgba(255, 192, 203, 0.3);
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .branch-image {
+            width: 100%;
+            height: 180px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.3);
+        }
+
+        .section-illustration {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(255, 182, 193, 0.3);
+            border: 2px solid rgba(255, 192, 203, 0.2);
+        }
+
+        .branch-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .branch-title {
+            font-size: 1.6em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #ff6b9d;
+        }
+
+        .branch-desc {
+            font-size: 1em;
+            color: #4a5568;
+            text-align: center;
+        }
+
+        .section {
+            background: linear-gradient(135deg, #ffffff 0%, #fff5f7 100%);
+            padding: 50px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+            border: 2px solid rgba(255, 192, 203, 0.2);
+        }
+
+        .section-title {
+            font-size: 2.2em;
+            color: #ff6b9d;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #ffb6c1;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .section-icon {
+            font-size: 1.2em;
+        }
+
+        .subsection {
+            margin: 30px 0;
+        }
+
+        .subsection-title {
+            font-size: 1.5em;
+            color: #c06c84;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .content-text {
+            font-size: 1.1em;
+            color: #2d3748;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
+            padding: 25px;
+            border-left: 5px solid #ff6b9d;
+            border-radius: 20px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+            margin: 30px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(180deg, #ff6b9d 0%, #ffb6c1 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #ff6b9d;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #ffb6c1;
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #c06c84;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .beliefs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .belief-card {
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
+            padding: 25px;
+            border-radius: 20px;
+            border-top: 4px solid #ff6b9d;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+        }
+
+        .belief-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4);
+        }
+
+        .belief-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ff6b9d;
+            margin-bottom: 10px;
+        }
+
+        .impact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .impact-list li {
+            padding: 15px;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #fff 0%, #fff5f7 100%);
+            border-left: 4px solid #ff6b9d;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(255, 182, 193, 0.2);
+        }
+
+        .impact-list li strong {
+            color: #ff6b9d;
+            font-size: 1.1em;
+        }
+
+        .debate-section {
+            background: linear-gradient(135deg, #fff5f7 0%, #ffe8f0 100%);
+            padding: 30px;
+            border-radius: 20px;
+            border-left: 5px solid #ff6b9d;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(255, 182, 193, 0.2);
+        }
+
+        .debate-title {
+            font-size: 1.4em;
+            color: #c06c84;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .conclusion {
+            background: linear-gradient(135deg, #ff6b9d 0%, #f7aac0 50%, #f67280 100%);
+            color: white;
+            padding: 50px;
+            border-radius: 30px;
+            margin-top: 40px;
+            box-shadow: 0 20px 60px rgba(255, 182, 193, 0.5);
+            border: 3px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .conclusion-title {
+            font-size: 2.5em;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .conclusion-text {
+            font-size: 1.2em;
+            line-height: 2;
+            text-align: justify;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.3em;
+            text-align: center;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            margin: 30px 0;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .section {
+                padding: 30px 20px;
+            }
+
+            .section-title {
+                font-size: 1.7em;
+            }
+
+            .branches {
+                flex-direction: column;
+            }
+
+            .conclusion {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <div class="container">
+   <header>
+    <h1 id="main-title">Cristianismo Histórico</h1>
+    <p class="subtitle" id="subtitle">Un Análisis Filosófico y Cultural</p>
+   </header>
+   <div class="image-hero">
+    <svg viewbox="0 0 800 400" class="hero-image"><defs>
+      <lineargradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+       <stop offset="0%" style="stop-color:#ffd4e5;stop-opacity:1" />
+       <stop offset="100%" style="stop-color:#ffe8f0;stop-opacity:1" />
+      </lineargradient>
+      <lineargradient id="churchGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+       <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+       <stop offset="100%" style="stop-color:#ffe8f0;stop-opacity:1" />
+      </lineargradient>
+     </defs> <!-- Cielo --> <rect width="800" height="400" fill="url(#skyGradient)" /> <!-- Sol --> <circle cx="650" cy="80" r="50" fill="#ffd700" opacity="0.6" /> <circle cx="650" cy="80" r="40" fill="#ffed4e" /> <!-- Nubes --> <ellipse cx="150" cy="80" rx="60" ry="30" fill="#fff" opacity="0.7" /> <ellipse cx="180" cy="75" rx="50" ry="25" fill="#fff" opacity="0.7" /> <ellipse cx="500" cy="100" rx="70" ry="35" fill="#fff" opacity="0.7" /> <ellipse cx="540" cy="95" rx="60" ry="30" fill="#fff" opacity="0.7" /> <!-- Iglesia central --> <rect x="320" y="180" width="160" height="180" fill="url(#churchGradient)" stroke="#ff6b9d" stroke-width="2" /> <!-- Torre --> <rect x="370" y="100" width="60" height="80" fill="url(#churchGradient)" stroke="#ff6b9d" stroke-width="2" /> <polygon points="400,60 370,100 430,100" fill="#ff6b9d" /> <!-- Cruz --> <rect x="395" y="35" width="10" height="30" fill="#ff6b9d" /> <rect x="385" y="45" width="30" height="10" fill="#ff6b9d" /> <!-- Ventanas --> <rect x="350" y="210" width="40" height="60" rx="20" fill="#ffd4e5" /> <rect x="410" y="210" width="40" height="60" rx="20" fill="#ffd4e5" /> <circle cx="400" cy="300" r="25" fill="#ffd4e5" /> <!-- Puerta --> <rect x="370" y="300" width="60" height="60" rx="30" ry="10" fill="#c06c84" /> <!-- Árboles --> <ellipse cx="250" cy="320" rx="40" ry="60" fill="#ffb6c1" /> <rect x="240" y="320" width="20" height="40" fill="#c06c84" /> <ellipse cx="550" cy="310" rx="45" ry="65" fill="#ffb6c1" /> <rect x="540" y="310" width="20" height="50" fill="#c06c84" /> <!-- Pájaros --> <path d="M 100 120 Q 110 115 120 120" stroke="#ff6b9d" stroke-width="2" fill="none" /> <path d="M 130 125 Q 140 120 150 125" stroke="#ff6b9d" stroke-width="2" fill="none" /> <path d="M 700 140 Q 710 135 720 140" stroke="#ff6b9d" stroke-width="2" fill="none" />
+    </svg>
+   </div>
+   <div class="branches">
+    <div class="branch-card">
+     <svg viewbox="0 0 200 200" class="branch-image"><defs>
+       <lineargradient id="vaticanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#ffe8f0;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ffd4e5;stop-opacity:1" />
+       </lineargradient>
+      </defs> <rect width="200" height="200" fill="url(#vaticanGrad)" /> <!-- Basílica de San Pedro simplificada --> <ellipse cx="100" cy="140" rx="80" ry="50" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <rect x="60" y="90" width="80" height="50" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <circle cx="100" cy="70" r="30" fill="#ffd700" /> <rect x="95" y="40" width="10" height="35" fill="#ff6b9d" /> <rect x="85" y="50" width="30" height="10" fill="#ff6b9d" /> <!-- Columnas --> <rect x="70" y="100" width="8" height="40" fill="#ffb6c1" /> <rect x="90" y="100" width="8" height="40" fill="#ffb6c1" /> <rect x="110" y="100" width="8" height="40" fill="#ffb6c1" /> <rect x="130" y="100" width="8" height="40" fill="#ffb6c1" />
+     </svg>
+     <div class="branch-title">
+      Catolicismo Romano
+     </div>
+     <div class="branch-desc">
+      La tradición occidental centrada en Roma, con el Papa como autoridad suprema
+     </div>
+    </div>
+    <div class="branch-card">
+     <svg viewbox="0 0 200 200" class="branch-image"><defs>
+       <lineargradient id="orthodoxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#ffe8f0;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ffd4e5;stop-opacity:1" />
+       </lineargradient>
+      </defs> <rect width="200" height="200" fill="url(#orthodoxGrad)" /> <!-- Iglesia ortodoxa con cúpulas --> <rect x="60" y="100" width="80" height="80" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <!-- Cúpula central --> <ellipse cx="100" cy="90" rx="35" ry="40" fill="#ffd700" stroke="#ff6b9d" stroke-width="2" /> <rect x="95" y="50" width="10" height="45" fill="#ff6b9d" /> <ellipse cx="100" cy="45" rx="8" ry="12" fill="#ff6b9d" /> <rect x="90" y="35" width="20" height="8" fill="#ff6b9d" /> <!-- Cúpulas laterales --> <ellipse cx="70" cy="100" rx="20" ry="25" fill="#ffb6c1" stroke="#ff6b9d" stroke-width="1" /> <ellipse cx="130" cy="100" rx="20" ry="25" fill="#ffb6c1" stroke="#ff6b9d" stroke-width="1" /> <!-- Ventanas --> <rect x="85" y="130" width="30" height="40" rx="15" fill="#ffd4e5" /> <!-- Iconos decorativos --> <circle cx="75" cy="150" r="8" fill="#ffd700" /> <circle cx="125" cy="150" r="8" fill="#ffd700" />
+     </svg>
+     <div class="branch-title">
+      Ortodoxia Oriental
+     </div>
+     <div class="branch-desc">
+      Las iglesias orientales que mantienen la tradición de los primeros concilios
+     </div>
+    </div>
+    <div class="branch-card">
+     <svg viewbox="0 0 200 200" class="branch-image"><defs>
+       <lineargradient id="protestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#ffe8f0;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ffd4e5;stop-opacity:1" />
+       </lineargradient>
+      </defs> <rect width="200" height="200" fill="url(#protestGrad)" /> <!-- Iglesia protestante simple --> <rect x="50" y="110" width="100" height="70" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <polygon points="100,50 50,110 150,110" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <!-- Torre con cruz --> <rect x="85" y="60" width="30" height="50" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <rect x="95" y="35" width="10" height="30" fill="#ff6b9d" /> <rect x="85" y="45" width="30" height="10" fill="#ff6b9d" /> <!-- Biblia abierta --> <rect x="75" y="140" width="50" height="30" fill="#ffd700" stroke="#ff6b9d" stroke-width="2" /> <line x1="100" y1="140" x2="100" y2="170" stroke="#ff6b9d" stroke-width="2" /> <line x1="80" y1="150" x2="95" y2="150" stroke="#c06c84" stroke-width="1" /> <line x1="80" y1="155" x2="95" y2="155" stroke="#c06c84" stroke-width="1" /> <line x1="105" y1="150" x2="120" y2="150" stroke="#c06c84" stroke-width="1" /> <line x1="105" y1="155" x2="120" y2="155" stroke="#c06c84" stroke-width="1" /> <!-- Ventanas simples --> <rect x="65" y="130" width="15" height="25" fill="#ffd4e5" /> <rect x="120" y="130" width="15" height="25" fill="#ffd4e5" />
+     </svg>
+     <div class="branch-title">
+      Protestantismo Clásico
+     </div>
+     <div class="branch-desc">
+      La reforma del siglo XVI que enfatiza la Escritura y la fe personal
+     </div>
+    </div>
+   </div>
+   <section class="section">
+    <h2 class="section-title"><span class="section-icon">🌅</span> <span id="section1-title">Cómo Nació la Religión</span></h2>
+    <div class="subsection">
+     <h3 class="subsection-title">Orígenes en el Judaísmo del Siglo I</h3>
+     <svg viewbox="0 0 600 300" class="section-illustration"><defs>
+       <lineargradient id="desertGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#ffe8f0;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#ffd4e5;stop-opacity:1" />
+       </lineargradient>
+      </defs> <rect width="600" height="300" fill="url(#desertGrad)" /> <!-- Sol --> <circle cx="500" cy="60" r="40" fill="#ffd700" opacity="0.8" /> <!-- Montañas --> <polygon points="0,200 100,120 200,200" fill="#ffb6c1" opacity="0.6" /> <polygon points="150,200 280,100 400,200" fill="#ff6b9d" opacity="0.5" /> <polygon points="350,200 480,130 600,200" fill="#ffb6c1" opacity="0.6" /> <!-- Ciudad antigua --> <rect x="200" y="180" width="200" height="80" fill="#fff" opacity="0.8" /> <rect x="220" y="160" width="40" height="40" fill="#ffe8f0" /> <rect x="270" y="160" width="40" height="40" fill="#ffe8f0" /> <rect x="320" y="160" width="40" height="40" fill="#ffe8f0" /> <polygon points="240,140 220,160 260,160" fill="#ff6b9d" /> <polygon points="290,140 270,160 310,160" fill="#ff6b9d" /> <polygon points="340,140 320,160 360,160" fill="#ff6b9d" /> <!-- Camino --> <ellipse cx="300" cy="260" rx="150" ry="30" fill="#ffd4e5" opacity="0.6" /> <!-- Palmeras --> <rect x="120" y="200" width="15" height="60" fill="#c06c84" /> <ellipse cx="127" cy="190" rx="25" ry="30" fill="#98d8c8" opacity="0.7" /> <rect x="470" y="210" width="15" height="50" fill="#c06c84" /> <ellipse cx="477" cy="200" rx="25" ry="30" fill="#98d8c8" opacity="0.7" />
+     </svg>
+     <p class="content-text">El cristianismo nació en Judea alrededor del año 30 d.C. como un movimiento mesiánico dentro del judaísmo. Su figura central, Jesús de Nazaret, predicó un mensaje de renovación espiritual, amor al prójimo y la llegada del Reino de Dios. Tras su crucifixión bajo Poncio Pilato y la creencia en su resurrección, sus seguidores formaron las primeras comunidades cristianas.</p>
+    </div>
+    <div class="highlight-box"><strong>Punto de Inflexión:</strong> La expansión paulina transformó el cristianismo de una secta judía local en un movimiento universal. El apóstol Pablo llevó el mensaje a las grandes ciudades del Imperio Romano (Éfeso, Corinto, Roma), universalizando la fe más allá de las fronteras étnicas y culturales del judaísmo.
+    </div>
+    <div class="timeline">
+     <div class="timeline-item">
+      <div class="timeline-date">
+       30 d.C.
+      </div>
+      <p class="content-text">Crucifixión de Jesús y nacimiento de la Iglesia primitiva en Jerusalén</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       50-62 d.C.
+      </div>
+      <p class="content-text">Pablo escribe sus epístolas, los primeros documentos cristianos que articulan la doctrina</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       64 d.C.
+      </div>
+      <p class="content-text">Persecución de Nerón en Roma, primera gran persecución imperial</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       70 d.C.
+      </div>
+      <p class="content-text">Destrucción del Templo de Jerusalén, separación definitiva del judaísmo</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       313 d.C.
+      </div>
+      <p class="content-text">Edicto de Milán: Constantino legaliza el cristianismo en el Imperio Romano</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       325 d.C.
+      </div>
+      <p class="content-text">Concilio de Nicea: se establece el Credo Niceno y la ortodoxia cristiana</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       1054 d.C.
+      </div>
+      <p class="content-text">Gran Cisma: separación entre la Iglesia Católica Romana y la Ortodoxa Oriental</p>
+     </div>
+     <div class="timeline-item">
+      <div class="timeline-date">
+       1517 d.C.
+      </div>
+      <p class="content-text">Martín Lutero publica las 95 Tesis, inicio de la Reforma Protestante</p>
+     </div>
+    </div>
+    <div class="subsection">
+     <h3 class="subsection-title">Institucionalización y Expansión (Siglos I-IV)</h3>
+     <p class="content-text">Durante los primeros tres siglos, el cristianismo experimentó un proceso de institucionalización que incluyó la fijación del canon bíblico (Antiguo y Nuevo Testamento) y el desarrollo de una estructura jerárquica con el surgimiento del "episcopado monárquico". Este proceso culminó cuando el emperador Constantino I aceptó el cristianismo, convirtiéndolo en religión del Imperio.</p>
+     <p class="content-text">La paradoja histórica surgió del éxito de la universalización: el crecimiento geográfico y la adaptación a dos entornos imperiales distintos (el griego de Oriente y el latino de Occidente) plantaron las semillas de futuras divisiones que culminarían en el Gran Cisma de 1054.</p>
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title"><span class="section-icon">✝️</span> <span id="section2-title">Principales Creencias y Prácticas</span></h2>
+    <div class="subsection">
+     <h3 class="subsection-title">Creencias Fundamentales Compartidas</h3>
+     <div class="beliefs-grid">
+      <div class="belief-card">
+       <div class="belief-title">
+        La Trinidad
+       </div>
+       <p class="content-text">Dios existe en tres personas: Padre, Hijo (Jesucristo) y Espíritu Santo, un solo Dios en tres manifestaciones.</p>
+      </div>
+      <div class="belief-card">
+       <div class="belief-title">
+        La Encarnación
+       </div>
+       <p class="content-text">Jesús es verdadero Dios y verdadero hombre, nacido de la Virgen María para la salvación de la humanidad.</p>
+      </div>
+      <div class="belief-card">
+       <div class="belief-title">
+        La Redención
+       </div>
+       <p class="content-text">Cristo murió en la cruz para redimir a la humanidad del pecado y resucitó al tercer día, venciendo la muerte.</p>
+      </div>
+      <div class="belief-card">
+       <div class="belief-title">
+        La Salvación
+       </div>
+       <p class="content-text">La salvación se obtiene por la gracia de Dios a través de la fe en Jesucristo (con matices entre tradiciones).</p>
+      </div>
+      <div class="belief-card">
+       <div class="belief-title">
+        La Resurrección
+       </div>
+       <p class="content-text">Creencia en la vida eterna y la resurrección de los muertos al final de los tiempos.</p>
+      </div>
+      <div class="belief-card">
+       <div class="belief-title">
+        Las Escrituras
+       </div>
+       <p class="content-text">La Biblia (Antiguo y Nuevo Testamento) es la Palabra de Dios revelada, autoridad suprema de fe.</p>
+      </div>
+     </div>
+    </div>
+    <div class="subsection">
+     <h3 class="subsection-title">Diferencias Entre las Tres Tradiciones</h3>
+     <div class="highlight-box"><strong>Catolicismo Romano:</strong>
+      <ul style="margin-top: 10px;">
+       <li>✦ Autoridad del Papa como sucesor de Pedro y vicario de Cristo</li>
+       <li>✦ Siete sacramentos: Bautismo, Confirmación, Eucaristía, Penitencia, Unción de Enfermos, Orden Sacerdotal y Matrimonio</li>
+       <li>✦ Veneración de María y los santos como intercesores</li>
+       <li>✦ Tradición y Magisterio junto a las Escrituras como fuentes de autoridad</li>
+       <li>✦ Doctrina del Purgatorio y las indulgencias</li>
+      </ul>
+     </div>
+     <div class="highlight-box"><strong>Ortodoxia Oriental:</strong>
+      <ul style="margin-top: 10px;">
+       <li>✦ Estructura colegial: patriarcas de igual autoridad (Constantinopla, Moscú, Alejandría, etc.)</li>
+       <li>✦ Énfasis en la tradición de los Padres de la Iglesia y los primeros siete concilios ecuménicos</li>
+       <li>✦ Liturgia rica y mística, con iconos como "ventanas al cielo"</li>
+       <li>✦ Rechazo del Filioque (controversia sobre la procesión del Espíritu Santo)</li>
+       <li>✦ Teosis: proceso de divinización del ser humano por la gracia</li>
+      </ul>
+     </div>
+     <div class="highlight-box"><strong>Protestantismo Clásico:</strong>
+      <ul style="margin-top: 10px;">
+       <li>✦ Sola Scriptura: la Biblia como única autoridad suprema</li>
+       <li>✦ Sola Fide: salvación solo por la fe, no por obras</li>
+       <li>✦ Sola Gratia: salvación solo por la gracia de Dios</li>
+       <li>✦ Sacerdocio universal de todos los creyentes</li>
+       <li>✦ Generalmente dos sacramentos: Bautismo y Cena del Señor</li>
+       <li>✦ Rechazo de la autoridad papal y de la veneración de santos</li>
+      </ul>
+     </div>
+    </div>
+    <div class="subsection">
+     <h3 class="subsection-title">Prácticas Religiosas Comunes</h3>
+     <p class="content-text"><strong>Culto y Liturgia:</strong> Todas las tradiciones celebran servicios religiosos regulares, aunque con diferentes estilos. El catolicismo y la ortodoxia tienen liturgias más formales y ritualizadas, mientras que el protestantismo tiende a ser más simple y centrado en la predicación.</p>
+     <p class="content-text"><strong>Sacramentos:</strong> Los sacramentos son actos sagrados instituidos por Cristo. El bautismo (iniciación) y la eucaristía/comunión (memorial de la Última Cena) son universales, aunque interpretados de manera diferente.</p>
+     <p class="content-text"><strong>Oración:</strong> La comunicación con Dios es central. Incluye oración personal, comunitaria, el Padre Nuestro, y en algunas tradiciones, el rosario y la liturgia de las horas.</p>
+     <p class="content-text"><strong>Lectura Bíblica:</strong> El estudio de las Escrituras es fundamental, especialmente enfatizado en el protestantismo.</p>
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title"><span class="section-icon">🌍</span> <span id="section3-title">Impacto Social y Cultural</span></h2>
+    <div class="subsection">
+     <h3 class="subsection-title">Transformación de la Civilización Occidental</h3>
+     <p class="content-text">El cristianismo ha sido la fuerza cultural más influyente en la formación de la civilización occidental durante casi dos milenios. Su impacto abarca prácticamente todas las dimensiones de la vida social, política, artística y filosófica.</p>
+    </div>
+    <svg viewbox="0 0 600 300" class="section-illustration"><defs>
+      <lineargradient id="artGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+       <stop offset="0%" style="stop-color:#fff5f7;stop-opacity:1" />
+       <stop offset="100%" style="stop-color:#ffe8f0;stop-opacity:1" />
+      </lineargradient>
+      <lineargradient id="stainedGlass1" x1="0%" y1="0%" x2="100%" y2="100%">
+       <stop offset="0%" style="stop-color:#ff6b9d;stop-opacity:0.8" />
+       <stop offset="100%" style="stop-color:#ffd700;stop-opacity:0.8" />
+      </lineargradient>
+      <lineargradient id="stainedGlass2" x1="0%" y1="0%" x2="100%" y2="100%">
+       <stop offset="0%" style="stop-color:#98d8c8;stop-opacity:0.8" />
+       <stop offset="100%" style="stop-color:#ff6b9d;stop-opacity:0.8" />
+      </lineargradient>
+     </defs> <rect width="600" height="300" fill="url(#artGrad)" /> <!-- Catedral gótica --> <rect x="200" y="100" width="200" height="180" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <!-- Torres --> <rect x="210" y="40" width="50" height="60" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <rect x="340" y="40" width="50" height="60" fill="#fff" stroke="#ff6b9d" stroke-width="2" /> <polygon points="235,20 210,40 260,40" fill="#ff6b9d" /> <polygon points="365,20 340,40 390,40" fill="#ff6b9d" /> <!-- Rosetón (ventana circular) --> <circle cx="300" cy="150" r="35" fill="url(#stainedGlass1)" stroke="#ff6b9d" stroke-width="2" /> <circle cx="300" cy="150" r="25" fill="none" stroke="#fff" stroke-width="2" /> <line x1="300" y1="125" x2="300" y2="175" stroke="#fff" stroke-width="2" /> <line x1="275" y1="150" x2="325" y2="150" stroke="#fff" stroke-width="2" /> <!-- Ventanas góticas --> <path d="M 230 200 L 230 250 L 250 250 L 250 200 Q 240 190 230 200" fill="url(#stainedGlass2)" stroke="#ff6b9d" stroke-width="1" /> <path d="M 270 200 L 270 250 L 290 250 L 290 200 Q 280 190 270 200" fill="url(#stainedGlass1)" stroke="#ff6b9d" stroke-width="1" /> <path d="M 310 200 L 310 250 L 330 250 L 330 200 Q 320 190 310 200" fill="url(#stainedGlass2)" stroke="#ff6b9d" stroke-width="1" /> <path d="M 350 200 L 350 250 L 370 250 L 370 200 Q 360 190 350 200" fill="url(#stainedGlass1)" stroke="#ff6b9d" stroke-width="1" /> <!-- Puerta --> <path d="M 270 250 L 270 280 L 330 280 L 330 250 Q 300 240 270 250" fill="#c06c84" /> <!-- Arbotantes decorativos --> <path d="M 200 150 Q 180 150 170 170" stroke="#ff6b9d" stroke-width="3" fill="none" /> <path d="M 400 150 Q 420 150 430 170" stroke="#ff6b9d" stroke-width="3" fill="none" /> <!-- Notas musicales --> <circle cx="80" cy="100" r="8" fill="#ff6b9d" /> <rect x="88" y="70" width="3" height="30" fill="#ff6b9d" /> <circle cx="520" cy="120" r="8" fill="#ff6b9d" /> <rect x="528" y="90" width="3" height="30" fill="#ff6b9d" /> <circle cx="100" cy="140" r="8" fill="#ffd700" /> <rect x="108" y="110" width="3" height="30" fill="#ffd700" />
+    </svg>
+    <ul class="impact-list">
+     <li><strong>Arte y Arquitectura:</strong> Las catedrales góticas, el arte bizantino, la pintura renacentista (Miguel Ángel, Rafael, Leonardo), la música sacra (Bach, Händel, Mozart) son expresiones del genio cristiano. El arte cristiano ha producido algunas de las obras más sublimes de la humanidad.</li>
+     <li><strong>Educación y Universidades:</strong> La Iglesia fundó las primeras universidades europeas (Bolonia, París, Oxford, Cambridge). Los monasterios preservaron el conocimiento clásico durante la Edad Media. La alfabetización y la educación se expandieron bajo influencia cristiana.</li>
+     <li><strong>Ética y Derechos Humanos:</strong> Conceptos como la dignidad inherente de cada persona, la igualdad ante Dios, el amor al prójimo y la compasión por los pobres han influido profundamente en el desarrollo de los derechos humanos modernos.</li>
+     <li><strong>Ciencia y Filosofía:</strong> Muchos científicos pioneros fueron cristianos devotos (Copérnico, Galileo, Newton, Mendel, Lemaître). La teología escolástica medieval sentó bases para el método científico. La filosofía cristiana (Agustín, Tomás de Aquino) integró fe y razón.</li>
+     <li><strong>Caridad y Hospitales:</strong> El cristianismo institucionalizó el cuidado de enfermos, pobres y marginados. Los primeros hospitales fueron fundados por órdenes religiosas. Las órdenes caritativas han sido pilares de la asistencia social.</li>
+     <li><strong>Literatura y Pensamiento:</strong> Dante, Milton, Dostoievski, Tolkien, C.S. Lewis y miles de autores han sido profundamente influidos por la cosmovisión cristiana. La Biblia es el libro más traducido e influyente de la historia.</li>
+     <li><strong>Calendario y Festividades:</strong> El calendario occidental está estructurado alrededor de eventos cristianos. Navidad, Semana Santa, Pentecostés y otras festividades marcan el ritmo cultural de muchas sociedades.</li>
+     <li><strong>Abolición de la Esclavitud:</strong> Aunque históricamente complejo, el movimiento abolicionista fue liderado en gran medida por cristianos evangélicos (Wilberforce en Inglaterra, cuáqueros en América) basándose en principios bíblicos de igualdad.</li>
+    </ul>
+    <div class="highlight-box"><strong>Influencia Global Contemporánea:</strong> Con aproximadamente 2.4 mil millones de adherentes (un tercio de la población mundial), el cristianismo sigue siendo la religión más grande del mundo. Su influencia se extiende a través de instituciones educativas, organizaciones caritativas, movimientos sociales y presencia cultural en todos los continentes.
+    </div>
+   </section>
+   <section class="section">
+    <h2 class="section-title"><span class="section-icon">⚖️</span> <span id="section4-title">Crítica y Debate Importante</span></h2>
+    <div class="subsection">
+     <h3 class="subsection-title">La Tensión entre Fe y Razón: Una Perspectiva Kantiana</h3>
+     <p class="content-text">Desde la Ilustración, particularmente con Immanuel Kant, surge una crítica filosófica fundamental al cristianismo histórico: la tensión entre la fe revelada y la razón autónoma. Kant argumentó que la religión debe ser sometida al tribunal de la razón práctica, y que la moralidad no puede depender de mandatos divinos externos, sino de la autonomía de la voluntad racional.</p>
+    </div>
+    <div class="debate-section">
+     <div class="debate-title">
+      Crítica Kantiana: La Religión dentro de los Límites de la Mera Razón
+     </div>
+     <p class="content-text">Kant distinguió entre la "fe racional" (basada en principios morales universales) y la "fe histórica" (basada en revelaciones particulares y dogmas). Argumentó que el cristianismo histórico, con sus dogmas sobre milagros, la Trinidad, la expiación vicaria y la resurrección, va más allá de lo que la razón puede justificar.</p>
+     <p class="content-text">Para Kant, la verdadera religión es la moral: "La religión es el reconocimiento de todos nuestros deberes como mandatos divinos." Los elementos sobrenaturales del cristianismo son, en el mejor de los casos, símbolos de verdades morales, no hechos históricos que requieren asentimiento.</p>
+    </div>
+    <div class="subsection">
+     <h3 class="subsection-title">Debates Contemporáneos</h3>
+     <div class="highlight-box"><strong>1. Pluralismo Religioso y Exclusivismo:</strong>
+      <p class="content-text" style="margin-top: 10px;">¿Cómo puede el cristianismo afirmar ser el único camino de salvación en un mundo de diversidad religiosa? La doctrina tradicional "extra ecclesiam nulla salus" (fuera de la Iglesia no hay salvación) enfrenta críticas en sociedades pluralistas. Teólogos contemporáneos debaten entre exclusivismo, inclusivismo y pluralismo.</p>
+     </div>
+     <div class="highlight-box"><strong>2. Ciencia y Creación:</strong>
+      <p class="content-text" style="margin-top: 10px;">El conflicto aparente entre la narrativa bíblica de la creación y la teoría de la evolución continúa siendo un punto de tensión. Mientras muchos cristianos aceptan la evolución teísta, otros mantienen interpretaciones literales del Génesis, generando debates sobre la compatibilidad entre fe y ciencia.</p>
+     </div>
+     <div class="highlight-box"><strong>3. Ética Sexual y Género:</strong>
+      <p class="content-text" style="margin-top: 10px;">Las enseñanzas tradicionales sobre matrimonio, homosexualidad, identidad de género y roles de género están en tensión con valores contemporáneos de autonomía individual y derechos LGBTQ+. Esto ha generado divisiones internas en muchas denominaciones.</p>
+     </div>
+     <div class="highlight-box"><strong>4. El Problema del Mal:</strong>
+      <p class="content-text" style="margin-top: 10px;">La teodicea (justificación de Dios ante el mal) sigue siendo un desafío filosófico. ¿Cómo reconciliar la existencia de un Dios omnipotente, omnisciente y benevolente con el sufrimiento masivo, las catástrofes naturales y el mal moral?</p>
+     </div>
+     <div class="highlight-box"><strong>5. Abusos Institucionales:</strong>
+      <p class="content-text" style="margin-top: 10px;">Los escándalos de abuso sexual en la Iglesia Católica, la complicidad histórica con regímenes opresivos, las Cruzadas, la Inquisición y la persecución de herejes son manchas históricas que generan críticas sobre la brecha entre ideales cristianos y práctica institucional.</p>
+     </div>
+     <div class="highlight-box"><strong>6. Secularización y Relevancia:</strong>
+      <p class="content-text" style="margin-top: 10px;">En muchas sociedades occidentales, la asistencia a la iglesia y la identificación religiosa están en declive. ¿Puede el cristianismo mantener su relevancia en sociedades cada vez más seculares y científicamente orientadas?</p>
+     </div>
+    </div>
+    <div class="subsection">
+     <h3 class="subsection-title">Respuestas Cristianas a las Críticas</h3>
+     <p class="content-text">Los teólogos y apologetas cristianos han desarrollado respuestas sofisticadas a estas críticas. Argumentan que la fe y la razón no son incompatibles, sino complementarias. Señalan que muchos fundadores de la ciencia moderna fueron cristianos devotos. Respecto al pluralismo, algunos proponen un "inclusivismo" que reconoce la verdad en otras religiones mientras mantiene la centralidad de Cristo. Sobre el problema del mal, desarrollan teodiceas que enfatizan el libre albedrío, el valor del alma-formación a través del sufrimiento, y la esperanza escatológica de justicia final.</p>
+    </div>
+   </section>
+   <div class="conclusion">
+    <h2 class="conclusion-title" id="conclusion-title">Reflexión Final: Aportes y Desafíos del Cristianismo Hoy</h2>
+    <div class="subsection">
+     <h3 style="font-size: 1.8em; margin-bottom: 20px; color: white;">¿Qué Aporta Esta Religión a la Vida y a la Sociedad Hoy?</h3>
+     <p class="conclusion-text"><strong>1. Sentido y Propósito Existencial:</strong> En una época de nihilismo y crisis de significado, el cristianismo ofrece una narrativa coherente sobre el origen, propósito y destino de la vida humana. Proporciona respuestas a las preguntas fundamentales: ¿De dónde venimos? ¿Por qué existimos? ¿Hacia dónde vamos?</p>
+     <p class="conclusion-text"><strong>2. Fundamento Ético:</strong> El mandamiento del amor (amar a Dios y al prójimo como a uno mismo) proporciona una base sólida para la ética personal y social. Los valores de compasión, perdón, justicia, dignidad humana y servicio sacrificial siguen siendo relevantes y necesarios.</p>
+     <p class="conclusion-text"><strong>3. Comunidad y Pertenencia:</strong> Las iglesias ofrecen comunidades de apoyo, especialmente importantes en sociedades cada vez más atomizadas y solitarias. Proporcionan redes de cuidado mutuo, apoyo en crisis y sentido de pertenencia.</p>
+     <p class="conclusion-text"><strong>4. Esperanza y Consuelo:</strong> La promesa de redención, perdón, vida eterna y justicia final ofrece consuelo ante el sufrimiento, la pérdida y la injusticia. La esperanza cristiana ha sostenido a millones en circunstancias extremas.</p>
+     <p class="conclusion-text"><strong>5. Servicio Social:</strong> Las organizaciones cristianas siguen siendo líderes en asistencia humanitaria, educación, atención médica y defensa de los vulnerables. Desde hospitales hasta orfanatos, desde programas de alfabetización hasta ayuda en desastres, el impacto práctico es inmenso.</p>
+     <p class="conclusion-text"><strong>6. Arte y Cultura:</strong> El cristianismo continúa inspirando arte, música, literatura y arquitectura de gran belleza y profundidad. La tradición estética cristiana enriquece la cultura global.</p>
+    </div>
+    <div class="quote">
+     "El cristianismo, si es verdadero, debe ser capaz de soportar el escrutinio más riguroso de la razón, pues la verdad no teme a la investigación."
+    </div>
+    <div class="subsection">
+     <h3 style="font-size: 1.8em; margin-bottom: 20px; color: white;">¿Cuáles Desafíos o Críticas Enfrenta?</h3>
+     <p class="conclusion-text"><strong>1. Crisis de Credibilidad:</strong> Los escándalos institucionales, especialmente los abusos sexuales y su encubrimiento, han erosionado gravemente la confianza pública en las instituciones cristianas. La brecha entre los ideales proclamados y la conducta real de líderes religiosos genera cinismo.</p>
+     <p class="conclusion-text"><strong>2. Conflicto con la Ciencia:</strong> Aunque muchos cristianos aceptan la evolución y la cosmología moderna, persisten tensiones en áreas como los orígenes, los milagros y la intervención divina. El fundamentalismo científico y el fundamentalismo religioso se enfrentan, dejando poco espacio para el diálogo matizado.</p>
+     <p class="conclusion-text"><strong>3. Exclusivismo en un Mundo Plural:</strong> La afirmación tradicional de que Cristo es el único camino de salvación es vista por muchos como arrogante e intolerante en sociedades multiculturales y pluralistas. El desafío es mantener convicciones firmes mientras se respeta genuinamente a otras tradiciones.</p>
+     <p class="conclusion-text"><strong>4. Ética Sexual y Autonomía Individual:</strong> Las enseñanzas tradicionales sobre sexualidad, matrimonio y género están en tensión profunda con valores contemporáneos de autonomía, autodeterminación y derechos individuales. Esto ha causado divisiones internas y alejamiento de generaciones jóvenes.</p>
+     <p class="conclusion-text"><strong>5. Secularización y Irrelevancia Percibida:</strong> En muchas sociedades occidentales, el cristianismo es visto como una reliquia del pasado, irrelevante para la vida moderna. La asistencia a la iglesia declina, especialmente entre jóvenes. El desafío es demostrar relevancia sin diluir el mensaje.</p>
+     <p class="conclusion-text"><strong>6. Politización:</strong> La asociación del cristianismo con agendas políticas particulares (especialmente en Estados Unidos) ha alienado a muchos. El desafío es mantener una voz profética sin convertirse en un brazo de partidos políticos.</p>
+     <p class="conclusion-text"><strong>7. El Problema del Mal:</strong> El sufrimiento masivo, las catástrofes naturales y el mal moral continúan planteando preguntas difíciles sobre la naturaleza y el carácter de Dios. Las respuestas teológicas a menudo parecen inadecuadas ante el dolor concreto.</p>
+    </div>
+    <div class="quote">
+     "El futuro del cristianismo dependerá de su capacidad para mantener la fidelidad a su mensaje central mientras responde con humildad, integridad y compasión a los desafíos legítimos de la modernidad."
+    </div>
+    <p class="conclusion-text" style="margin-top: 30px; font-size: 1.1em; text-align: center;">El cristianismo histórico ha moldeado profundamente la civilización occidental y continúa siendo una fuerza vital para millones de personas en todo el mundo. Su capacidad para adaptarse sin perder su esencia, para dialogar con la razón sin abandonar la fe, y para servir a la humanidad con humildad y amor, determinará su relevancia en el siglo XXI. La tensión entre tradición y renovación, entre fe y razón, entre particularidad y universalidad, seguirá siendo el campo de batalla donde se juega el futuro de esta antigua y resiliente tradición religiosa.</p>
+   </div>
+  </div>
+  <script>
+        const defaultConfig = {
+            main_title: "Cristianismo Histórico",
+            subtitle: "Un Análisis Filosófico y Cultural",
+            section1_title: "Cómo Nació la Religión",
+            section2_title: "Principales Creencias y Prácticas",
+            section3_title: "Impacto Social y Cultural",
+            section4_title: "Crítica y Debate Importante",
+            conclusion_title: "Reflexión Final: Aportes y Desafíos del Cristianismo Hoy",
+            background_color: "#ffecd2",
+            surface_color: "#fff5f7",
+            text_color: "#2d3748",
+            primary_action_color: "#ff6b9d",
+            secondary_action_color: "#c06c84",
+            font_family: "Georgia",
+            font_size: 16
+        };
+
+        async function onConfigChange(config) {
+            const mainTitle = config.main_title || defaultConfig.main_title;
+            const subtitle = config.subtitle || defaultConfig.subtitle;
+            const section1Title = config.section1_title || defaultConfig.section1_title;
+            const section2Title = config.section2_title || defaultConfig.section2_title;
+            const section3Title = config.section3_title || defaultConfig.section3_title;
+            const section4Title = config.section4_title || defaultConfig.section4_title;
+            const conclusionTitle = config.conclusion_title || defaultConfig.conclusion_title;
+            
+            const backgroundColor = config.background_color || defaultConfig.background_color;
+            const surfaceColor = config.surface_color || defaultConfig.surface_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+            const primaryActionColor = config.primary_action_color || defaultConfig.primary_action_color;
+            const secondaryActionColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+            
+            const fontFamily = config.font_family || defaultConfig.font_family;
+            const fontSize = config.font_size || defaultConfig.font_size;
+
+            document.getElementById('main-title').textContent = mainTitle;
+            document.getElementById('subtitle').textContent = subtitle;
+            document.getElementById('section1-title').textContent = section1Title;
+            document.getElementById('section2-title').textContent = section2Title;
+            document.getElementById('section3-title').textContent = section3Title;
+            document.getElementById('section4-title').textContent = section4Title;
+            document.getElementById('conclusion-title').textContent = conclusionTitle;
+
+            document.body.style.background = `linear-gradient(135deg, ${backgroundColor} 0%, #fcb69f 50%, #ff9a9e 100%)`;
+            
+            const sections = document.querySelectorAll('.section, header');
+            sections.forEach(section => {
+                section.style.backgroundColor = surfaceColor;
+            });
+
+            const allText = document.querySelectorAll('.content-text, .subsection-title, .branch-desc, .timeline-date, p, li');
+            allText.forEach(text => {
+                text.style.color = textColor;
+            });
+
+            const sectionTitles = document.querySelectorAll('.section-title');
+            sectionTitles.forEach(title => {
+                title.style.color = backgroundColor;
+            });
+
+            const branchTitles = document.querySelectorAll('.branch-title');
+            branchTitles.forEach(title => {
+                title.style.color = backgroundColor;
+            });
+
+            const subsectionTitles = document.querySelectorAll('.subsection-title');
+            subsectionTitles.forEach(title => {
+                title.style.color = primaryActionColor;
+            });
+
+            document.body.style.fontFamily = `${fontFamily}, Georgia, serif`;
+            
+            document.querySelector('h1').style.fontSize = `${fontSize * 2.2}px`;
+            document.querySelector('.subtitle').style.fontSize = `${fontSize * 1.4}px`;
+            document.querySelectorAll('.section-title').forEach(el => {
+                el.style.fontSize = `${fontSize * 2.2}px`;
+            });
+            document.querySelectorAll('.subsection-title').forEach(el => {
+                el.style.fontSize = `${fontSize * 1.5}px`;
+            });
+            document.querySelectorAll('.content-text').forEach(el => {
+                el.style.fontSize = `${fontSize * 1.1}px`;
+            });
+            document.querySelectorAll('.conclusion-text').forEach(el => {
+                el.style.fontSize = `${fontSize * 1.2}px`;
+            });
+        }
+
+        function mapToCapabilities(config) {
+            return {
+                recolorables: [
+                    {
+                        get: () => config.background_color || defaultConfig.background_color,
+                        set: (value) => {
+                            config.background_color = value;
+                            window.elementSdk.setConfig({ background_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.surface_color || defaultConfig.surface_color,
+                        set: (value) => {
+                            config.surface_color = value;
+                            window.elementSdk.setConfig({ surface_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.text_color || defaultConfig.text_color,
+                        set: (value) => {
+                            config.text_color = value;
+                            window.elementSdk.setConfig({ text_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.primary_action_color || defaultConfig.primary_action_color,
+                        set: (value) => {
+                            config.primary_action_color = value;
+                            window.elementSdk.setConfig({ primary_action_color: value });
+                        }
+                    },
+                    {
+                        get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+                        set: (value) => {
+                            config.secondary_action_color = value;
+                            window.elementSdk.setConfig({ secondary_action_color: value });
+                        }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => config.font_family || defaultConfig.font_family,
+                    set: (value) => {
+                        config.font_family = value;
+                        window.elementSdk.setConfig({ font_family: value });
+                    }
+                },
+                fontSizeable: {
+                    get: () => config.font_size || defaultConfig.font_size,
+                    set: (value) => {
+                        config.font_size = value;
+                        window.elementSdk.setConfig({ font_size: value });
+                    }
+                }
+            };
+        }
+
+        function mapToEditPanelValues(config) {
+            return new Map([
+                ["main_title", config.main_title || defaultConfig.main_title],
+                ["subtitle", config.subtitle || defaultConfig.subtitle],
+                ["section1_title", config.section1_title || defaultConfig.section1_title],
+                ["section2_title", config.section2_title || defaultConfig.section2_title],
+                ["section3_title", config.section3_title || defaultConfig.section3_title],
+                ["section4_title", config.section4_title || defaultConfig.section4_title],
+                ["conclusion_title", config.conclusion_title || defaultConfig.conclusion_title]
+            ]);
+        }
+
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'99c632ddd51807ce',t:'MTc2Mjc4NDUxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
